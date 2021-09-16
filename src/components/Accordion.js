@@ -5,11 +5,11 @@ const Accordion = ({items}) => {
 
 
     const renderedItems=items.map((item,index)=>{
-        const active = index=== activeIndex?"active":" ";
+        const active = index === activeIndex ? "active":" ";
         return(
             <div key={item.title}>
                 <div className={`title ${active}`}
-                onClick={()=>setActiveIndex(index)}>
+                onClick={() => setActiveIndex(index)}>
                     <i className="dropdown icon"></i>
                     {item.title}
                 </div>
